@@ -8,10 +8,8 @@ import sys
 import json
 import requests
 
-
 try:
-	file = open('{}'.format(sys.argv[1]), 'r')
-	for value in file:
-		print(value, end='')
+	file = open('{}'.format(sys.argv[1], 'r')
+	print(file.read(), end='')
 except ValueError:
 	print("Error: File does not exist\npath:{}".format(sys.argv[1]))
